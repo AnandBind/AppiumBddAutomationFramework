@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.081 s <<< FAILURE! - in testRunner.runner
+testRunner.runner.runScenario["User navigates to the settings page", "Navigation in Mobile App"](1)  Time elapsed: 0.128 s  <<< FAILURE!
+java.lang.NoSuchMethodError: 'void org.openqa.selenium.remote.http.ClientConfig.<init>(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials)'
+	at io.appium.java_client.AppiumClientConfig.<init>(AppiumClientConfig.java:62)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+	at base.base.setupDriver(base.java:34)
+	at stepsDefinitions.loginSteps.userLaunchesApp(loginSteps.java:12)
+	at ✽.the user launches the app(file:///E:/AutomationAppiumTest/src/test/resources/features/login.feature:4)
+

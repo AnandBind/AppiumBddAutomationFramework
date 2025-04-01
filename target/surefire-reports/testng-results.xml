@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-18T13:16:40 IST" name="Surefire suite" finished-at="2025-03-18T13:16:40 IST" duration-ms="658">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.runner@5bd03f44]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-18T13:16:40 IST" name="Surefire test" finished-at="2025-03-18T13:16:40 IST" duration-ms="658">
+      <class name="testRunner.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.runner@5bd03f44]" started-at="2025-03-18T13:16:40 IST" name="setUpClass" finished-at="2025-03-18T13:16:40 IST" duration-ms="461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1a6f2363]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.runner@5bd03f44]" started-at="2025-03-18T13:16:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-18T13:16:40 IST" duration-ms="123" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User navigates to the settings page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation in Mobile App"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['void org.openqa.selenium.remote.http.ClientConfig.<init>(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'void org.openqa.selenium.remote.http.ClientConfig.<init>(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials)'
+at io.appium.java_client.AppiumClientConfig.<init>(AppiumClientConfig.java:62)
+at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at base.base.setupDriver(base.java:34)
+at stepsDefinitions.loginSteps.userLaunchesApp(loginSteps.java:12)
+at ✽.the user launches the app(file:///E:/AutomationAppiumTest/src/test/resources/features/login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.runner@5bd03f44]" started-at="2025-03-18T13:16:40 IST" name="tearDownClass" finished-at="2025-03-18T13:16:40 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.runner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

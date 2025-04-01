@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 18 13:16:40 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (658 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.runner.runScenario()'><b>runScenario</b><br>Test class: testRunner.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates to the settings page", "Navigation in Mobile App"</td>
+<td><div><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:62)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at base.base.setupDriver(base.java:34)
+	at stepsDefinitions.loginSteps.userLaunchesApp(loginSteps.java:12)
+	at ?.the user launches the app(file:///E:/AutomationAppiumTest/src/test/resources/features/login.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace424732838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424732838'><pre>java.lang.NoSuchMethodError: &apos;void org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(java.net.URI, java.time.Duration, java.time.Duration, org.openqa.selenium.remote.http.Filter, java.net.Proxy, org.openqa.selenium.Credentials)&apos;
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:62)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at base.base.setupDriver(base.java:34)
+	at stepsDefinitions.loginSteps.userLaunchesApp(loginSteps.java:12)
+	at ?.the user launches the app(file:///E:/AutomationAppiumTest/src/test/resources/features/login.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.runner@5bd03f44</td></tr>
+</table><p>
+</body>
+</html>
